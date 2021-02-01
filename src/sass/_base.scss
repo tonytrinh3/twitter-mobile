@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* you can force inheritance with inherit keyword - it is better in css community
+  to put box sizing in the body instead of up here */
+  /* change box model so that borders and paddings are no longer added to the total width or total height that we specify for a box. so we are getting rid of that behavior */
+}
+
+html {
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+  @media only screen and (max-width: $bp-ipad-width) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+a {
+  color: $default-font-color;
+  font-size: $default-font-size;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  outline: none; //https://stackoverflow.com/questions/19886843/how-to-remove-outline-border-from-input-button
+  cursor: pointer;
+  background-color: $default-white;
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0;
+}

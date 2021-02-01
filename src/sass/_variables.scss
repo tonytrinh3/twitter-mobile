@@ -1,0 +1,62 @@
+$default-font-size: 2.5rem;
+
+
+$twitter-blue:#1DA1F2;
+$twitter-black:#14171A;
+$twitter-dark-grey:#657786;
+$twitter-light-grey: #AAB8C2;
+$twitter-extra-light-grey: #E1E8ED;
+$twitter-extra-extra-light-grey:#F5F8FA;
+
+$default-font-color: $twitter-black;
+
+$default-white: white;
+//#DDEEF6 - light blue - sidebar fill color
+
+
+
+//border
+$default-border: solid 1px $twitter-extra-light-grey;
+$default-border-radius-med: 2rem;
+
+
+
+//grid-templates
+$std-grid-template-columns: [full-start] minmax(8rem, 1fr) [center-start]
+  repeat(8, [col-start] minmax(min-content, 16rem) [col-end]) [center-end]
+  minmax(8rem, 1fr) [full-end];
+
+$std-grid-template-columns-responsive: [full-start] 2rem [center-start]
+  repeat(8, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 2rem
+  [full-end];
+
+
+
+
+
+
+
+
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+//https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+//https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-shadow
+$default-box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.1);
+
+
+
+
+
+
+
+
+
+//RESPONSE BREAKPOINTS
+$bp-1920-width: 132em; //1920 px /16
+$bp-720-width: 80em; //1280 px /16
+$bp-ipad-pro-width: 68.75em; //1100 px /16 for ipad pro
+$bp-ipad-width: 50em; //800 px / 16 for ipad
+$bp-surface-duo-width: 33.75em; //600 px / 16 for ipad
+$bp-pixel-2-xl-width: 26.25em; //420 px / 16 for pixel 2 xl
+
+$bp-hei-small: 37.5em; //600 px / 16 for iphone 5
+$bp-hei-small-2: 40em; //640 px / 16 for moto g4

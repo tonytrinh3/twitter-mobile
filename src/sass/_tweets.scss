@@ -1,0 +1,58 @@
+.tweets{
+    border-bottom: $default-border;
+
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: repeat(3,max-content) 1fr;
+
+    &__main-row{
+        display: grid;
+        grid-template-columns: repeat(5,max-content);
+        align-items: center;
+        column-gap: .5rem;
+
+        & h5{
+            color: $twitter-dark-grey;
+            font-weight: 500;
+        }
+
+        & p{
+            color: $twitter-dark-grey;
+            font-weight: 500;
+            
+        }
+    }
+
+    &__date::before{
+        content: "\00B7";
+        align-self: center;
+        margin-right: .3rem;
+    }
+
+    &__profile-pic{
+        margin-right: .5rem;
+    }
+
+
+    &__verified{
+       margin-right: .5rem;
+    }
+
+    &__hashtags{
+        color: $twitter-blue;
+    }
+
+    &__attached-img{
+        grid-row:4;
+        height: 40rem;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        // content:"";
+    }
+
+    @media only screen and (max-width: $bp-720-width) {
+        border-radius:0%;
+    }
+}

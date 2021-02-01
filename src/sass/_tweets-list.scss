@@ -1,0 +1,21 @@
+.tweets-list{
+    grid-row: 2;
+    grid-column: center-start/center-end;
+    display: grid;
+    // grid-gap: 2rem;
+    // padding: 2rem;
+    border: $default-border;
+
+    @media only screen and (max-width: $bp-720-width) {
+        grid-column: full-start/full-end;
+        border: none;
+        padding: 0rem;
+        grid-gap: 0rem;
+    }
+
+    &__loading{
+   
+        text-align: center;
+        color: $twitter-dark-grey;
+    }
+}

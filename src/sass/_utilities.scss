@@ -1,0 +1,31 @@
+.margin-bottom-small {
+  margin-bottom: 0.5rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-large {
+  margin-bottom: 4rem;
+}
+
+.section-margin {
+  margin: 5rem 7rem 5rem 7rem;
+
+  @media only screen and (max-width: $bp-ipad-width) {
+    margin: 3rem 3rem 3rem 3rem;
+  }
+}
+
+.profile-img{
+  border-radius: 50%;
+  border: $default-border;
+  height: 6rem;
+  width: 6rem;
+}
+
+.verified-check{
+  height:2rem;
+  width: 2rem;
+}

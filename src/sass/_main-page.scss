@@ -1,0 +1,10 @@
+.main-page {
+  display: grid;
+  grid-template-columns: $std-grid-template-columns;
+  grid-template-rows: 16rem 1fr ;
+  
+
+  @media only screen and (max-width: $bp-720-width) {
+    grid-template-columns: $std-grid-template-columns-responsive;
+  }
+}

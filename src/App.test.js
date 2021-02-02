@@ -19,10 +19,9 @@ it("renders tweets list", () => {
 });
 
 it("has InfiniteScroll", () => {
-  // expect(wrapper.containsMatchingElement(<HandlerBanner />)).toEqual(true);
-  console.log(wrapper.debug());
+  // console.log(wrapper.debug());
   expect(wrapper.find("InfiniteScroll").length).toEqual(1);
-  // expect(wrapper.contains(<HandlerBanner/>)).toBe(true);
+
 });
 
 
@@ -33,11 +32,6 @@ it("has InfiniteScroll", () => {
 //   // expect(wrapper.contains(<HandlerBanner/>)).toBe(true);
 // })
 
-// it("defaultHandles works",()=>{
-
-//   expect(wrapper.find('.tweets__link')).toHaveLength(20);
-// // expect(wrapper.contains(<HandlerBanner/>)).toBe(true);
-// })
 
 //need to test if fetch data is correct
 

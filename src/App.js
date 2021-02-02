@@ -26,6 +26,7 @@ function App() {
     window.scrollTo(0, 0);
   }, [defaultHandles]);
 
+  //function that fetches tweets from server
   const fetchTweet = async (lastTweetId, userHandle, tweets) => {
     let addMaxId = "";
     if (lastTweetId) {
@@ -39,6 +40,7 @@ function App() {
   };
   console.log(tweets);
 
+  //gets the tweets and render all the tweets within array
   const renderTweets = tweets.map((tweet, i) => {
     const { entities, id_str } = tweet;
 
@@ -51,6 +53,7 @@ function App() {
     });
 
     return (
+      //anchor tag wrapped around the card in order for user to click back to twitter and original tweet
       <a
         href={`https://twitter.com/${defaultHandles[0]}/status/${id_str}`}
         key={i}
@@ -61,6 +64,7 @@ function App() {
     );
   });
 
+  //fetch max_id from last tweet of the 20 batch in order to call 20 more tweets
   const fetchNextTweets = (tweets) => {
     setTimeout(() => {
       setLastTweetId(tweets[tweets.length - 1].id);
@@ -95,8 +99,3 @@ function App() {
 
 export default App;
 
-      //  {/* <HandlerBanner
-      //     defaultHandles={defaultHandles}
-      //     setDefaultHandles={setDefaultHandles}
-      //     handleImg={"www.google.com"}
-      //   /> */}

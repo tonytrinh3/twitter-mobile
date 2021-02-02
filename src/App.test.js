@@ -18,11 +18,11 @@ it("renders tweets list",()=>{
   expect(wrapper.find("div.tweets-list").length).toEqual(1);
 })
 
-// it("renders HandlerBanner",()=>{
+it("renders HandlerBanner",()=>{
 
-//   expect(wrapper.find(HandlerBanner).length).toEqual(1);
-//   // expect(wrapper.contains(<HandlerBanner/>)).toBe(true);
-// })
+  expect(wrapper.find(HandlerBanner).length).toEqual(1);
+  // expect(wrapper.contains(<HandlerBanner/>)).toBe(true);
+})
 
 // it("renders 20 Tweets",()=>{
 

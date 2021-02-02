@@ -2,6 +2,10 @@
 
 ## How to run the project
 
+### `Make sure to have Node.js and npm installed already`
+
+This project is React on the front-end and Express/Node.js in the back-end.
+
 ### `npm-install`
 
 Make sure to `npm-install` the main folder as well as the `server` folder in order to install node_modules for the server and the client side.

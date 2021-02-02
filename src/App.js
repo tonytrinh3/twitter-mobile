@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import { ReactComponent as VerifiedCheck } from "assets/img/check.svg";
+
 
 import "sass/main.scss";
 
-import FixedHandler from "components/FixedHandler";
-import TweetCard from "components/TweetCard";
+import HandlerBanner from "components/HandlerBanner/HandlerBanner";
+import TweetCard from "components/TweetCard/TweetCard";
 
 function App() {
   const [tweets, setTweets] = useState([]);
@@ -37,7 +37,7 @@ function App() {
 
     setTweets([...tweets, ...fetchedTweets]);
   };
-  // console.log(tweets);
+  console.log(tweets);
 
   const renderTweets = tweets.map((tweet, i) => {
     const { entities, id_str } = tweet;
@@ -54,6 +54,7 @@ function App() {
       <a
         href={`https://twitter.com/${defaultHandles[0]}/status/${id_str}`}
         key={i}
+        className = "tweets__link"
       >
         <TweetCard tweet={tweet} i={i} hashtags={renderHashtags} />
       </a>
@@ -69,13 +70,13 @@ function App() {
   return (
     <div className="main-page">
       {tweets.length > 0 ? (
-        <FixedHandler
+        <HandlerBanner
           defaultHandles={defaultHandles}
           setDefaultHandles={setDefaultHandles}
           handleImg={tweets[0].user.profile_image_url_https}
         />
       ) : null}
-
+  
       <div className="tweets-list">
         {renderTweets}
 

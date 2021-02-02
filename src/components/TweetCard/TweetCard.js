@@ -12,11 +12,11 @@ const TweetCard = ({ tweet, i, hashtags }) => {
           src={user.profile_image_url_https}
           alt={user.name}
         />
-        <h4>{user.name}</h4>
+        <h4 className="tweets__handler-name">{user.name}</h4>
         {user.verified ? (
           <VerifiedCheck className="tweets__verified verified-check" />
         ) : null}
-        <h5>@{user.screen_name}</h5>
+        <h5 className="tweets__handler-username">@{user.screen_name}</h5>
         <h5 className="tweets__date">
           {created_at.split(" ")[1]} {created_at.split(" ")[2]}
         </h5>

@@ -44,15 +44,22 @@
 
     &__attached-img{
         grid-row:4;
-        height: 40rem;
+        height: 40vh;
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        // content:"";
+        // content:"";+
+
+        @media only screen and (max-width: $bp-720-width) {
+       
+            height: 40rem;
+      
+        }
     }
 
     @media only screen and (max-width: $bp-720-width) {
+       
         border-radius:0%;
     }
 }

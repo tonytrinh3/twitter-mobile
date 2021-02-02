@@ -30,6 +30,8 @@ beforeEach(() => {
   );
 });
 
+// mimic onclick on the div - pass in defaulthandles that you have here and some setDefaulthandles here jest.fn and expect that defaulthandle[1] defaulthandle[0]
+
 // describe("chosenHandler change", () => {
 //   it("default handler change", () => {
 //     const { result } = renderHook(() => (

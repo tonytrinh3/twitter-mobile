@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { ReactComponent as VerifiedCheck } from "assets/img/check.svg";
 
 const TweetCard = ({ tweet, i, hashtags }) => {
@@ -38,5 +39,12 @@ const TweetCard = ({ tweet, i, hashtags }) => {
     </div>
   );
 };
+
+TweetCard.propTypes = {
+  tweet: PropTypes.object,
+  i: PropTypes.number,
+  hashtags: PropTypes.array,
+};
+
 
 export default TweetCard;

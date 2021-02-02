@@ -1,11 +1,11 @@
 //test to see if cards render
 //test to see if you get prop
 
-import { render, screen } from "@testing-library/react";
+
 import React from "react";
 import { shallow } from "enzyme";
 import TweetCard from "./TweetCard";
-import { ReactComponent as VerifiedCheck } from "assets/img/check.svg";
+
 
 let wrapper, tweet, i, hashtags;
 beforeEach(() => {

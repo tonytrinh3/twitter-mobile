@@ -76,10 +76,10 @@ function App() {
           handleImg={tweets[0].user.profile_image_url_https}
         />
       ) : null}
-  
+ 
       <div className="tweets-list">
         {renderTweets}
-
+    
         <InfiniteScroll
           dataLength={tweets.length}
           next={() => {
@@ -94,3 +94,9 @@ function App() {
 }
 
 export default App;
+
+      //  {/* <HandlerBanner
+      //     defaultHandles={defaultHandles}
+      //     setDefaultHandles={setDefaultHandles}
+      //     handleImg={"www.google.com"}
+      //   /> */}

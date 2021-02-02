@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { ReactComponent as Heart } from "assets/img/heart.svg";
 
 //chose handler to see tweet
@@ -41,5 +42,12 @@ const HandlerBanner = ({ defaultHandles, setDefaultHandles, handleImg }) => {
     </div>
   );
 };
+
+HandlerBanner.propTypes = {
+  defaultHandles: PropTypes.array,
+  setDefaultHandles: PropTypes.func,
+  handleImg: PropTypes.string,
+};
+
 
 export default HandlerBanner;

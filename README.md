@@ -4,7 +4,7 @@
 
 ### `npm-install`
 
-Make sure to "npm-install" the main folder as well as the "server" folder in order to install node_modules for the server and the client side.
+Make sure to `npm-install` the main folder as well as the `server` folder in order to install node_modules for the server and the client side.
 
 ### `server/config/dev.js`
 

@@ -5,26 +5,23 @@ import HandlerBanner from "components/HandlerBanner/HandlerBanner";
 import TweetCard from "components/TweetCard/TweetCard";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-let wrapper;
+describe("elements within App", () => {
+  let wrapper;
 
-beforeEach(() => {
+  beforeEach(() => {
+    wrapper = shallow(<App />);
+  });
 
-  wrapper = shallow(<App />);
+  it("renders tweets list", () => {
+    //console.log(wrapper.debug())
+    expect(wrapper.find("div.tweets-list").length).toEqual(1);
+  });
+
+  it("has InfiniteScroll", () => {
+    // console.log(wrapper.debug());
+    expect(wrapper.find("InfiniteScroll").length).toEqual(1);
+  });
 });
-
-
-it("renders tweets list", () => {
-  //console.log(wrapper.debug())
-  expect(wrapper.find("div.tweets-list").length).toEqual(1);
-});
-
-it("has InfiniteScroll", () => {
-  // console.log(wrapper.debug());
-  expect(wrapper.find("InfiniteScroll").length).toEqual(1);
-
-});
-
-
 
 // it("renders 20 Tweets",()=>{
 
@@ -32,6 +29,4 @@ it("has InfiniteScroll", () => {
 //   // expect(wrapper.contains(<HandlerBanner/>)).toBe(true);
 // })
 
-
 //need to test if fetch data is correct
-
